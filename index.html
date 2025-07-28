@@ -1,37 +1,18 @@
-export default function Home() {
-  return (
-    <main className="min-h-screen bg-white text-black p-4">
-      <section className="text-center py-10 bg-gradient-to-r from-yellow-300 to-yellow-500 text-white rounded-2xl shadow-lg">
-        <h1 className="text-4xl font-bold mb-2">Portal da MM</h1>
-        <p className="text-lg max-w-xl mx-auto">
-          O fã-clube oficial dedicado à eterna rainha da sofrência, Marília Mendonça. Nossa missão é manter viva sua história, sua arte e seu legado.
-        </p>
-      </section>
+<!-- Cabeçalho do Portal da MM -->
+<header style="background-color: #FFF8DC; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <!-- Logotipo -->
+  <div style="display: flex; align-items: center;">
+    <img src="caminho-da-sua-logo.png" alt="Logo Portal da MM" style="height: 50px;">
+  </div>
 
-      <section className="mt-10 max-w-4xl mx-auto grid gap-6">
-        <div className="bg-white border border-yellow-400 rounded-xl p-6 shadow-md">
-          <h2 className="text-2xl font-semibold text-yellow-600 mb-2">Quem Somos</h2>
-          <p>
-            Somos uma equipe apaixonada por Marília Mendonça. Atuamos nas redes sociais, grupos de WhatsApp e em diversas frentes para homenagear a rainha. Criamos conteúdo, organizamos mutirões, especiais, gincanas e mantemos o legado vivo todos os dias.
-          </p>
-        </div>
-
-        <div className="bg-white border border-yellow-400 rounded-xl p-6 shadow-md">
-          <h2 className="text-2xl font-semibold text-yellow-600 mb-2">Nosso Propósito</h2>
-          <p>
-            Manter a memória de Marília sempre presente. Informar, entreter e unir fãs de todo o Brasil por meio de amor, respeito e dedicação.
-          </p>
-        </div>
-
-        <div className="bg-white border border-yellow-400 rounded-xl p-6 shadow-md">
-          <h2 className="text-2xl font-semibold text-yellow-600 mb-2">Acompanhe a Gente</h2>
-          <ul className="list-disc list-inside">
-            <li>Instagram: @portaldamm</li>
-            <li>Twitter: @portaldamm</li>
-            <li>Grupos de WhatsApp para novidades, mutirões e muito mais</li>
-          </ul>
-        </div>
-      </section>
-    </main>
-  );
-}
+  <!-- Menu de Navegação -->
+  <nav>
+    <ul style="list-style: none; display: flex; gap: 1.5rem; margin: 0; padding: 0;">
+      <li><a href="#inicio" style="text-decoration: none; color: #333; font-weight: 500;">Início</a></li>
+      <li><a href="#sobre" style="text-decoration: none; color: #333; font-weight: 500;">Sobre o Portal</a></li>
+      <li><a href="#homenagens" style="text-decoration: none; color: #333; font-weight: 500;">Homenagens</a></li>
+      <li><a href="#gincanas" style="text-decoration: none; color: #333; font-weight: 500;">Gincanas</a></li>
+      <li><a href="#contato" style="text-decoration: none; color: #333; font-weight: 500;">Contato</a></li>
+    </ul>
+  </nav>
+</header>

@@ -1,51 +1,37 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portal M&M</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  </head>
-  <body class="bg-white text-gray-800 font-sans">
-    <!-- Cabeçalho -->
-    <header class="bg-gradient-to-r from-pink-500 to-yellow-400 p-6 shadow-md">
-      <div class="container mx-auto flex justify-between items-center">
-        <h1 class="text-3xl font-bold text-white">Portal M&M</h1>
-        <nav>
-          <ul class="flex space-x-4 text-white font-semibold">
-            <li><a href="#" class="hover:underline">Início</a></li>
-            <li><a href="#sobre" class="hover:underline">Sobre</a></li>
-            <li><a href="#novidades" class="hover:underline">Novidades</a></li>
-            <li><a href="#grupos" class="hover:underline">Grupos</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-white text-black p-4">
+      <section className="text-center py-10 bg-gradient-to-r from-yellow-300 to-yellow-500 text-white rounded-2xl shadow-lg">
+        <h1 className="text-4xl font-bold mb-2">Portal da MM</h1>
+        <p className="text-lg max-w-xl mx-auto">
+          O fã-clube oficial dedicado à eterna rainha da sofrência, Marília Mendonça. Nossa missão é manter viva sua história, sua arte e seu legado.
+        </p>
+      </section>
 
-    <!-- Banner Inicial -->
-    <section class="bg-white py-20 text-center">
-      <div class="container mx-auto">
-        <h2 class="text-4xl md:text-5xl font-bold mb-4">Bem-vindos ao Portal M&M</h2>
-        <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Seu ponto de encontro com tudo sobre Marília Mendonça e o universo sertanejo feminino.</p>
-      </div>
-    </section>
-
-    <!-- Sobre o Portal -->
-    <section id="sobre" class="bg-gray-100 py-20">
-      <div class="container mx-auto px-4 md:flex md:items-center md:space-x-12">
-        <img src="https://i.imgur.com/jzkEZoV.jpg" alt="Foto Marília" class="w-full md:w-1/2 rounded-2xl shadow-lg mb-8 md:mb-0">
-        <div class="md:w-1/2">
-          <h3 class="text-3xl font-bold mb-4 text-pink-600">Sobre o Portal M&M</h3>
-          <p class="text-gray-700 text-lg leading-relaxed">Criado por fãs e para fãs, o Portal M&M é um espaço dedicado à memória, legado e impacto de Marília Mendonça. Reunimos notícias, conteúdos especiais, homenagens e uma comunidade ativa de admiradores que mantêm viva a história da Rainha da Sofrência.</p>
+      <section className="mt-10 max-w-4xl mx-auto grid gap-6">
+        <div className="bg-white border border-yellow-400 rounded-xl p-6 shadow-md">
+          <h2 className="text-2xl font-semibold text-yellow-600 mb-2">Quem Somos</h2>
+          <p>
+            Somos uma equipe apaixonada por Marília Mendonça. Atuamos nas redes sociais, grupos de WhatsApp e em diversas frentes para homenagear a rainha. Criamos conteúdo, organizamos mutirões, especiais, gincanas e mantemos o legado vivo todos os dias.
+          </p>
         </div>
-      </div>
-    </section>
 
-    <!-- Rodapé -->
-    <footer class="bg-gray-900 text-white py-8">
-      <div class="container mx-auto text-center">
-        <p>&copy; 2025 Portal M&M. Todos os direitos reservados.</p>
-      </div>
-    </footer>
-  </body>
-</html>
+        <div className="bg-white border border-yellow-400 rounded-xl p-6 shadow-md">
+          <h2 className="text-2xl font-semibold text-yellow-600 mb-2">Nosso Propósito</h2>
+          <p>
+            Manter a memória de Marília sempre presente. Informar, entreter e unir fãs de todo o Brasil por meio de amor, respeito e dedicação.
+          </p>
+        </div>
+
+        <div className="bg-white border border-yellow-400 rounded-xl p-6 shadow-md">
+          <h2 className="text-2xl font-semibold text-yellow-600 mb-2">Acompanhe a Gente</h2>
+          <ul className="list-disc list-inside">
+            <li>Instagram: @portaldamm</li>
+            <li>Twitter: @portaldamm</li>
+            <li>Grupos de WhatsApp para novidades, mutirões e muito mais</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  );
+}

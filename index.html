@@ -1,85 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portal da MM</title>
-  <link rel="stylesheet" href="styles.css">
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fff8e1;
+      background-color: #fffbea;
       color: #333;
     }
     header {
+      background-color: #f7ce4a;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      padding: 10px 30px;
-      background-color: #fdd835;
+      align-items: center;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     header img {
       height: 60px;
     }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-      margin: 0;
-      padding: 0;
-    }
-    nav ul li a {
+    nav a {
+      margin: 0 10px;
       text-decoration: none;
       color: #333;
-      font-weight: 500;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #a07000;
     }
     .hero {
       text-align: center;
       padding: 80px 20px;
-      background: linear-gradient(to right, #fff8e1, #fffde7);
+      background: #fff3c1;
     }
     .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
     }
-    .hero p {
-      font-size: 18px;
-      color: #555;
-      max-width: 600px;
-      margin: 0 auto;
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2rem;
+      color: #c79800;
     }
     footer {
-      background-color: #fdd835;
+      background-color: #f7ce4a;
       text-align: center;
       padding: 20px;
-      font-size: 14px;
-      color: #444;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://drive.google.com/uc?export=view&id=1OPVwAGUSGO8XR4tjghZFgw9az-d9BLrS" alt="Logo Portal da MM">
+    <img src="https://drive.google.com/uc?export=view&id=1OPVwAGUSGO8XR4tjghZFgw9az-d9BLrS" alt="Logo Portal da MM" />
     <nav>
-      <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Sobre o Portal</a></li>
-        <li><a href="#">Homenagens</a></li>
-        <li><a href="#">Gincanas</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre o Portal</a>
+      <a href="#homenagens">Homenagens</a>
+      <a href="#gincanas">Gincanas</a>
+      <a href="#contato">Contato</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Bem-vindo ao Portal da MM</h1>
-    <p>O espaço feito com amor para celebrar a história, o legado e os momentos eternos da nossa rainha Marília Mendonça. Aqui você encontra homenagens, ações especiais, interações de fã para fã e muito mais.</p>
+  <section class="hero" id="inicio">
+    <h1>O maior fã-clube da Rainha Marília Mendonça 💛</h1>
+    <p>Homenageando a eterna rainha com amor, respeito e memória viva.</p>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre o Portal</h2>
+    <p>O Portal da MM é um fã-clube dedicado à memória, à carreira e ao legado da Marília Mendonça. Criado por fãs apaixonados, o Portal realiza ações especiais, mantém viva a discografia e promove a conexão entre admiradores da artista em todo o Brasil.</p>
+  </section>
+
+  <section id="homenagens">
+    <h2>Homenagens</h2>
+    <p>Aqui você encontra textos, vídeos, mensagens e projetos feitos por fãs para manter viva a lembrança da nossa rainha. Atualizamos com frequência para eternizar os momentos que ela nos proporcionou.</p>
+  </section>
+
+  <section id="gincanas">
+    <h2>Gincanas</h2>
+    <p>Participe das nossas gincanas temáticas e mostre seu amor pela Marília! Desafios, enigmas, quizzes e muitas surpresas com premiações simbólicas entre os membros da comunidade.</p>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Quer falar com a gente? Envie sugestões, homenagens, ideias de projetos ou dúvidas através do e-mail: <strong>portaldamm.contato@gmail.com</strong>. Estamos também nas redes sociais e nos grupos oficiais.</p>
   </section>
 
   <footer>
-    &copy; 2025 Portal da MM. Todos os direitos reservados.
+    &copy; 2025 Portal da MM — Todos os direitos reservados.
   </footer>
 </body>
 </html>

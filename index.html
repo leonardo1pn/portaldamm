@@ -1,88 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portal da MM</title>
+  <link rel="stylesheet" href="styles.css">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #fff8e1;
       color: #333;
     }
-
     header {
-      background-color: #ffd54f;
-      padding: 10px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding: 10px 30px;
+      background-color: #fdd835;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-
-    .logo {
-      display: flex;
-      align-items: center;
-    }
-
-    .logo img {
+    header img {
       height: 60px;
     }
-
-    nav {
+    nav ul {
+      list-style: none;
       display: flex;
       gap: 20px;
+      margin: 0;
+      padding: 0;
     }
-
-    nav a {
+    nav ul li a {
       text-decoration: none;
       color: #333;
-      font-weight: 600;
+      font-weight: 500;
     }
-
-    nav a:hover {
-      color: #d32f2f;
-    }
-
     .hero {
       text-align: center;
-      padding: 60px 20px;
-      background-color: #fff3c4;
+      padding: 80px 20px;
+      background: linear-gradient(to right, #fff8e1, #fffde7);
     }
-
     .hero h1 {
-      font-size: 2.5rem;
-      color: #d32f2f;
-      margin-bottom: 10px;
+      font-size: 48px;
+      margin-bottom: 20px;
     }
-
     .hero p {
-      font-size: 1.2rem;
+      font-size: 18px;
+      color: #555;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    footer {
+      background-color: #fdd835;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
       color: #444;
-      max-width: 700px;
-      margin: auto;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <div class="logo">
-      <img src="logo.png" alt="Logo Portal da MM">
-    </div>
+    <img src="https://drive.google.com/uc?export=view&id=1OPVwAGUSGO8XR4tjghZFgw9az-d9BLrS" alt="Logo Portal da MM">
     <nav>
-      <a href="#">Início</a>
-      <a href="#">Sobre o Portal</a>
-      <a href="#">Homenagens</a>
-      <a href="#">Gincanas</a>
-      <a href="#">Contato</a>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre o Portal</a></li>
+        <li><a href="#">Homenagens</a></li>
+        <li><a href="#">Gincanas</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
     </nav>
   </header>
 
   <section class="hero">
-    <h1>Bem-vindo ao Portal da MM 💛</h1>
-    <p>Há mais de 3 anos sendo a ponte entre os fãs e o legado eterno de Marília Mendonça. Homenagens, gincanas, memórias e muito amor em um só lugar.</p>
+    <h1>Bem-vindo ao Portal da MM</h1>
+    <p>O espaço feito com amor para celebrar a história, o legado e os momentos eternos da nossa rainha Marília Mendonça. Aqui você encontra homenagens, ações especiais, interações de fã para fã e muito mais.</p>
   </section>
 
+  <footer>
+    &copy; 2025 Portal da MM. Todos os direitos reservados.
+  </footer>
 </body>
 </html>

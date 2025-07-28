@@ -1,111 +1,51 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal M&M</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-white text-gray-800 font-sans">
+    <!-- Cabeçalho -->
+    <header class="bg-gradient-to-r from-pink-500 to-yellow-400 p-6 shadow-md">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-3xl font-bold text-white">Portal M&M</h1>
+        <nav>
+          <ul class="flex space-x-4 text-white font-semibold">
+            <li><a href="#" class="hover:underline">Início</a></li>
+            <li><a href="#sobre" class="hover:underline">Sobre</a></li>
+            <li><a href="#novidades" class="hover:underline">Novidades</a></li>
+            <li><a href="#grupos" class="hover:underline">Grupos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portal da M&M - Tudo sobre Marília Mendonça, gincanas, mutirões, curiosidades, notícias e conteúdos especiais para fãs." />
-  <title>Portal da M&M</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
+    <!-- Banner Inicial -->
+    <section class="bg-white py-20 text-center">
+      <div class="container mx-auto">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">Bem-vindos ao Portal M&M</h2>
+        <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Seu ponto de encontro com tudo sobre Marília Mendonça e o universo sertanejo feminino.</p>
+      </div>
+    </section>
 
-    body {
-      background-color: #ffffff;
-      color: #111;
-      line-height: 1.6;
-    }
+    <!-- Sobre o Portal -->
+    <section id="sobre" class="bg-gray-100 py-20">
+      <div class="container mx-auto px-4 md:flex md:items-center md:space-x-12">
+        <img src="https://i.imgur.com/jzkEZoV.jpg" alt="Foto Marília" class="w-full md:w-1/2 rounded-2xl shadow-lg mb-8 md:mb-0">
+        <div class="md:w-1/2">
+          <h3 class="text-3xl font-bold mb-4 text-pink-600">Sobre o Portal M&M</h3>
+          <p class="text-gray-700 text-lg leading-relaxed">Criado por fãs e para fãs, o Portal M&M é um espaço dedicado à memória, legado e impacto de Marília Mendonça. Reunimos notícias, conteúdos especiais, homenagens e uma comunidade ativa de admiradores que mantêm viva a história da Rainha da Sofrência.</p>
+        </div>
+      </div>
+    </section>
 
-    header {
-      background-color: #111;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    nav {
-      background-color: #f5f5f5;
-      padding: 10px 20px;
-      text-align: center;
-    }
-
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #111;
-      font-weight: 600;
-    }
-
-    section.hero {
-      background-color: #ffecec;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    section.hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    section.hero p {
-      font-size: 1.2rem;
-      color: #333;
-    }
-
-    section.info {
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .info-box {
-      max-width: 800px;
-      margin: auto;
-    }
-
-    footer {
-      background-color: #111;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <h1>Portal da M&M</h1>
-    <p>O maior fã-clube da rainha Marília Mendonça 💛</p>
-  </header>
-
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#gincanas">Gincanas</a>
-    <a href="#mutiroes">Mutirões</a>
-    <a href="#noticias">Notícias</a>
-    <a href="#contato">Contato</a>
-  </nav>
-
-  <section class="hero">
-    <h1>Bem-vindo ao Portal da M&M</h1>
-    <p>Informação, diversão e emoção em um só lugar. Para quem ama Marília Mendonça!</p>
-  </section>
-
-  <section class="info" id="sobre">
-    <div class="info-box">
-      <h2>Quem somos</h2>
-      <p>O Portal da M&M nasceu do amor e admiração por Marília Mendonça. Somos um fã-clube ativo, que movimenta gincanas, mutirões, conteúdos especiais e tudo para manter viva a memória da nossa eterna rainha.</p>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Portal da M&M. Todos os direitos reservados.</p>
-  </footer>
-</body>
-
+    <!-- Rodapé -->
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2025 Portal M&M. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
 </html>

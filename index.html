@@ -1,141 +1,111 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portal MM - Fã-clube Marília Mendonça</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal da M&M - Tudo sobre Marília Mendonça, gincanas, mutirões, curiosidades, notícias e conteúdos especiais para fãs." />
+  <title>Portal da M&M</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #fffbea;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #f5f5f5;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #111;
+      font-weight: 600;
+    }
+
+    section.hero {
+      background-color: #ffecec;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    section.hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    section.hero p {
+      font-size: 1.2rem;
       color: #333;
     }
-    header {
-      background-color: #ffd700;
-      text-align: center;
-      padding: 20px;
-    }
-    header img {
-      max-height: 100px;
-    }
-    h1 {
-      margin: 10px 0;
-    }
-    nav {
-      background-color: #333;
-      text-align: center;
-      padding: 10px 0;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
+
+    section.info {
       padding: 40px 20px;
-      max-width: 900px;
+      text-align: center;
+    }
+
+    .info-box {
+      max-width: 800px;
       margin: auto;
     }
-    .banner {
-      background-image: url('https://i.imgur.com/1c4bKxH.jpg'); /* exemplo de banner */
-      background-size: cover;
-      background-position: center;
-      height: 300px;
-      border-radius: 8px;
-    }
-    .galeria img {
-      width: 100%;
-      max-width: 250px;
-      margin: 10px;
-      border-radius: 5px;
-    }
-    .contato, .redes {
-      margin-top: 20px;
-    }
-    .btn-whats {
-      display: inline-block;
-      background-color: #25d366;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+
     footer {
-      background-color: #333;
-      color: white;
+      background-color: #111;
+      color: #fff;
       text-align: center;
       padding: 20px;
       margin-top: 40px;
     }
   </style>
 </head>
-<body>
 
+<body>
   <header>
-    <img src="logo.png" alt="Logo Portal MM">
-    <h1>Portal MM</h1>
-    <p>Fã-clube oficial em homenagem à eterna rainha da sofrência</p>
+    <h1>Portal da M&M</h1>
+    <p>O maior fã-clube da rainha Marília Mendonça 💛</p>
   </header>
 
   <nav>
     <a href="#sobre">Sobre</a>
-    <a href="#galeria">Galeria</a>
+    <a href="#gincanas">Gincanas</a>
+    <a href="#mutiroes">Mutirões</a>
+    <a href="#noticias">Notícias</a>
     <a href="#contato">Contato</a>
   </nav>
 
-  <section class="banner"></section>
-
-  <section id="sobre">
-    <h2>Sobre o Fã-Clube</h2>
-    <p>
-      O Portal MM é uma homenagem viva à Marília Mendonça. Criado por fãs, para fãs, nosso objetivo é manter viva sua história, sua música e o legado de uma artista que tocou milhões de corações.
-    </p>
+  <section class="hero">
+    <h1>Bem-vindo ao Portal da M&M</h1>
+    <p>Informação, diversão e emoção em um só lugar. Para quem ama Marília Mendonça!</p>
   </section>
 
-  <section id="galeria">
-    <h2>Galeria de Fotos</h2>
-    <div class="galeria">
-      <img src="https://i.imgur.com/2c5vksZ.jpg" alt="Marília 1">
-      <img src="https://i.imgur.com/NehY5Vx.jpg" alt="Marília 2">
-      <img src="https://i.imgur.com/hFyaKAz.jpg" alt="Marília 3">
-    </div>
-  </section>
-
-  <section id="contato">
-    <h2>Entre em Contato</h2>
-    <div class="contato">
-      <p>Email: <a href="mailto:contato@portaldamm.com">contato@portaldamm.com</a></p>
-      <p>Fale conosco no WhatsApp:</p>
-      <a href="https://wa.me/SEUNUMERO" target="_blank" class="btn-whats">Enviar mensagem</a>
-    </div>
-
-    <div class="redes">
-      <h3>Siga nas redes sociais:</h3>
-      <p>
-        <a href="https://instagram.com/" target="_blank">Instagram</a> |
-        <a href="https://youtube.com/" target="_blank">YouTube</a> |
-        <a href="https://tiktok.com/" target="_blank">TikTok</a>
-      </p>
+  <section class="info" id="sobre">
+    <div class="info-box">
+      <h2>Quem somos</h2>
+      <p>O Portal da M&M nasceu do amor e admiração por Marília Mendonça. Somos um fã-clube ativo, que movimenta gincanas, mutirões, conteúdos especiais e tudo para manter viva a memória da nossa eterna rainha.</p>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Portal MM - Todos os direitos reservados.</p>
+    <p>&copy; 2025 Portal da M&M. Todos os direitos reservados.</p>
   </footer>
-
 </body>
-</html>
 
-<!-- Galeria -->
-<section class="galeria">
-  <h2>Galeria de Fotos</h2>
-  <div class="galeria-container">
-    <img src="caminho/para/foto1.jpg" alt="Foto 1">
-    <img src="caminho/para/foto2.jpg" alt="Foto 2">
-    <img src="caminho/para/foto3.jpg" alt="Foto 3">
-    <img src="caminho/para/foto4.jpg" alt="Foto 4">
-  </div>
-</section>
+</html>

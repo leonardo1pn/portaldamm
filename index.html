@@ -2,71 +2,87 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portal MM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal da MM</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #fffbea;
+      background-color: #fff8e1;
       color: #333;
     }
+
     header {
-      background-color: #ffd700;
+      background-color: #ffd54f;
       padding: 10px 20px;
-      text-align: center;
-    }
-    header img {
-      max-width: 200px;
-    }
-    nav {
-      background-color: #fff3b0;
       display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 15px 0;
-      font-weight: bold;
+      align-items: center;
+      justify-content: space-between;
     }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
     nav a {
-      color: #333;
       text-decoration: none;
-      transition: color 0.3s;
+      color: #333;
+      font-weight: 600;
     }
+
     nav a:hover {
-      color: #b38f00;
+      color: #d32f2f;
     }
-    section.hero {
-      padding: 50px 20px;
+
+    .hero {
       text-align: center;
+      padding: 60px 20px;
+      background-color: #fff3c4;
     }
-    section.hero h1 {
+
+    .hero h1 {
       font-size: 2.5rem;
-      color: #b38f00;
+      color: #d32f2f;
+      margin-bottom: 10px;
     }
-    section.hero p {
+
+    .hero p {
       font-size: 1.2rem;
+      color: #444;
       max-width: 700px;
-      margin: 20px auto 0;
+      margin: auto;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="logo.png" alt="Logo Portal MM" />
+    <div class="logo">
+      <img src="logo.png" alt="Logo Portal da MM">
+    </div>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Sobre o Portal</a>
+      <a href="#">Homenagens</a>
+      <a href="#">Gincanas</a>
+      <a href="#">Contato</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#">Início</a>
-    <a href="#">Sobre o Portal</a>
-    <a href="#">Homenagens</a>
-    <a href="#">Gincanas</a>
-    <a href="#">Contato</a>
-  </nav>
-
   <section class="hero">
-    <h1>Bem-vindo ao Portal da MM</h1>
-    <p>Há mais de 3 anos sendo o maior e mais apaixonado portal de fãs da nossa Rainha Marília Mendonça. 💛
-    Aqui você encontra homenagens, gincanas, atualizações e muito amor!</p>
+    <h1>Bem-vindo ao Portal da MM 💛</h1>
+    <p>Há mais de 3 anos sendo a ponte entre os fãs e o legado eterno de Marília Mendonça. Homenagens, gincanas, memórias e muito amor em um só lugar.</p>
   </section>
+
 </body>
 </html>
